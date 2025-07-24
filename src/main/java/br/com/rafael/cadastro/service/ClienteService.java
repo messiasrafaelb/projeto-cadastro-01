@@ -21,8 +21,9 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
-    public void salvarCliente(Cliente cliente) {
+    public Cliente salvarCliente(Cliente cliente) {
         clienteRepository.save(cliente);
+        return cliente;
     }
 
 
